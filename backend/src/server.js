@@ -12,7 +12,7 @@ const app = express ();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect ('mongodb+srv://freelord860:freelord860@aircnc-qh3oz.mongodb.net/app?retryWrites=true&w=majority ', {
+mongoose.connect ('mongodb+srv://(Login:Password{MONGODBATLAS})@aircnc-qh3oz.mongodb.net/app?retryWrites=true&w=majority ', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
